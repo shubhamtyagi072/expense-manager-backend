@@ -22,9 +22,9 @@ json = {date:"2022-3-11" , item:"maggie", price:14, quantity:4}
 route.post("/expense", expense);
 route.post("/user-expense", async (req, res) => {
   const month = [
-    "January",
-    "February",
-    "March",
+    "Jan",
+    "Feb",
+    "Mar",
     "April",
     "May",
     "June",
@@ -40,7 +40,6 @@ route.post("/user-expense", async (req, res) => {
     user_id: req.body.user_id,
     month: month[currentMonth],
   });
-  console.log(result);
   res.send(result);
 });
 
