@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d build",
-    "start": "nodemon index.js",
+    "start": "env-cmd -f .env.local nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": ""
+    "build": "env-cmd -f .env.prod nodemon index.js"
   },
   "keywords": [
     "heroku"
@@ -18,6 +18,7 @@
     "body-parser": "^1.19.2",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
+    "env-cmd": "^10.1.0",
     "express": "^4.17.3",
     "mongoose": "^6.2.7",
     "nodemon": "^2.0.15"

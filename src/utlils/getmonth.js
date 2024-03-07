@@ -1,30 +1,30 @@
 exports.getMonth = (e) => {
-  switch (e[1]) {
-    case "01":
+  switch (Number(e)) {
+    case 0:
       return "Jan";
-      case "02":
+    case 1:
       return "Feb";
-      case "03":
+    case 2:
       return "Mar";
-      case "04":
+    case 3:
       return "Apr";
-      case "05":
+    case 4:
       return "May";
-      case "06":
+    case 5:
       return "Jun";
-      case "07":
+    case 6:
       return "Jul";
-      case "08":
+    case 7:
       return "Aug";
-      case "09":
+    case 8:
       return "Sep";
-      case "10":
+    case 9:
       return "Oct";
-      case "11":
+    case 10:
       return "Nov";
-      case "12":
+    case 11:
       return "Dec";
-      default:
-          return "jan"
+    default:
+      return "jan";
   }
 };

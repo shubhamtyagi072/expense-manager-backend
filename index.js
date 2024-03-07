@@ -18,9 +18,11 @@ app.use(express.json()); // it is being used for the post request
 app.use(express.urlencoded({ extended: true }));
 app.use(cors()); // for passing cors request
 
+// it is generally used to check whether we had done deployment correct or not
 app.get("/", (req, res) => {
   res.send("hello world");
 });
+
 app.use("/api/v1", require("./src/routes/login.js"));
 
 app.listen(PORT, console.log(`Server running on PORT ${PORT}`));
