@@ -28,3 +28,18 @@ exports.getMonth = (e) => {
       return "jan";
   }
 };
+
+exports.MONTH = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
